@@ -1,0 +1,476 @@
+/*zero*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+body{
+    font-family: "Google Sans";
+    height: 100%;
+    height: 100%;  
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+html{
+    height: 100%;
+}
+.hidden{
+    display: none !important;
+}
+
+/*---------------------*/
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('Google Sans-normal-400-100.ttf');
+    src: local('Google Sans-normal-400-100'), local('Google Sans-normal-400-100'),
+        url('Google Sans-normal-400-100.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Google Sans Medium';
+    src: url('./google-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+h1{
+    color: var(--accounts_google_com_AccountChooser_identifier_1920x893_default-Shark, #202124);
+    text-align: center;
+    font-family: "Google Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+    color: #202124;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.main-block-inner{
+    padding: 48px 40px 62px;
+    border-radius: 8px;
+    border: 1px solid #DADCE0;
+    background: #FFF;
+    margin-bottom: 8px;
+    width: 100%;
+    max-width: 450px;
+}
+.main-wrap{
+    margin-top: 87px;
+}
+.hidden-section{
+    display: none !important;
+}
+.show-section{
+    display: block !important;
+}
+#contactForm{
+    min-width: 450px;
+}
+
+
+
+/*--- first screen ---*/
+
+.first-logo{
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.first-screen h1{
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+.first-screen h4{
+    margin-bottom: 35px;
+    color: #202124;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.1px;
+}
+.input-mail-wrap .input{
+    border-radius: 4px;
+    color: rgb(32,33,36);
+    font-size: 16px;
+    margin: 1px 1px 0 1px;
+    padding: 13px 15px;
+    height: 56px;
+    border: 1px solid rgb(218,220,224);
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 10px;
+}
+.input-mail-wrap .input label{
+    background: #fff;
+    color: rgb(95,99,104);
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    width: auto;
+    font-family: 'Roboto';
+    position: absolute;
+    bottom: 17px;
+    left: 8px;
+    padding: 0 8px;
+}
+.input-mail-wrap .input input{
+    height: 100%;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    font-family: 'Roboto';
+    line-height: 20px;
+}
+.input-mail-wrap .input label.active{
+    transform: scale(0.75) translateY(-37px);
+    left: -24px;
+    color: rgb(26,115,232);
+}
+.input-mail-wrap .input.active{
+    border: 2px solid rgb(26,115,232);
+}
+.forgot-mail{
+    color:  #1A73E8;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.25px;
+    cursor: pointer;
+}
+.input-mail-wrap{
+    margin-bottom: 47px;
+}
+.first-text-info p{
+    color:  #5F6368;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+.first-text-info p span{
+    color: rgb(26,115,232);
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+}
+.first-text-info{
+    margin-bottom: 35px;
+}
+.first-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.create-acc-btn{
+    color:  #1A73E8;
+    font-family: 'Google Sans Medium';
+    font-size: .875rem;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+}
+.next-screen-btn{
+    padding: 8px 24px;
+    border-radius: 4px;
+    background: #1A73E8;
+    color:  #FFF;
+    text-align: center;
+    font-family: "Google Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.15px;
+    cursor: pointer;
+}
+.input-mail-wrap .input.error{
+    border-color: red;
+}
+
+/*--- second screen ---*/
+.second-screen{
+    display: none;
+}
+
+.second-screen h1{
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+.login-block{
+    margin-bottom: 49px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+.login-block .inner{
+    display: inline-block;
+    border-radius: 16px;
+    border: 1px solid var(--accounts_google_com_signin_v2_challenge_pwd_1920x893_default-Iron, #DADCE0);
+    background: var(--accounts_google_com_signin_v2_challenge_pwd_1920x893_default-Nero, #FFF);
+    padding: 6px;
+}
+.wrapperd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.user-login{
+    color: var(--accounts_google_com_signin_v2_challenge_pwd_1920x893_default-Cape-Cod, #3C4043);
+    font-family: "Google Sans", sans-serif;
+    font-size: 13.781px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+}
+.input-password-wrap .input{
+    border-radius: 4px;
+    color: rgb(32,33,36);
+    font-size: 16px;
+    margin: 1px 1px 0 1px;
+    padding: 13px 15px;
+    height: 56px;
+    border: 1px solid rgb(218,220,224);
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 10px;
+}
+.input-password-wrap .input label{
+    background: #fff;
+    color: rgb(95,99,104);
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    width: auto;
+    font-family: 'Roboto';
+    position: absolute;
+    bottom: 17px;
+    left: 8px;
+    padding: 0 8px;
+}
+.input-password-wrap .input input{
+    height: 100%;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    font-family: 'Roboto';
+    line-height: 20px;
+}
+.input-password-wrap .input label.active{
+    transform: scale(0.75) translateY(-37px);
+    left: -8px;
+    color: rgb(26,115,232);
+}
+.input-password-wrap .input.active{
+    border: 2px solid rgb(26,115,232);
+}
+
+.checkbox{
+    border-radius: 2px;
+    border: 2px solid var(--accounts_google_com_signin_v2_challenge_pwd_1920x893_default-Shuttle-Gray, #5F6368);
+    width: 18px;
+    height: 18px;
+    position: relative;    
+}
+.forgot-password{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: var(--accounts_google_com_signin_v2_challenge_pwd_1920x893_default-Shark, #202124);
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    margin-left: 3px;
+    cursor: pointer;
+}
+.input-password-wrap{
+    margin-bottom: 48px;
+}
+.second-screen-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.forgot-password-btn{
+    color:  #1A73E8;
+    font-family: 'Google Sans Medium';
+    font-size: .875rem;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+}
+button.finish{
+    padding: 8px 24px;
+    border-radius: 4px;
+    background: #1A73E8;
+    color:  #FFF;
+    text-align: center;
+    font-family: "Google Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.15px;
+    cursor: pointer;
+    width: 92px;
+    height: 36px;
+}
+.forgot-password.active .checkbox{
+    border-color: #1A73E8;
+    background-color:  #1A73E8;
+}
+#showPass{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.forgot-password.active #showPass{
+    display: block;
+}
+.finish-wrap{
+    position: relative;
+}
+.finish-wrap img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.finish-wrap img.active{
+    display: block;
+}
+
+/*--- footer ---*/
+.select-language{
+    padding: 17px 4px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+}
+.select-language span{
+    margin-right: 119px;
+    color: var(--accounts_google_com_AccountChooser_identifier_1920x893_default-Cape-Cod, #3C4043);
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: var(--mdc-typography-subtitle1-font-weight, 400);
+    letter-spacing: .009375em;
+    margin-left: -4px;
+}
+
+.bottom-links{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.bottom-links a{
+    color: var(--accounts_google_com_AccountChooser_identifier_1920x893_default-Cape-Cod, #3C4043);
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+}
+
+
+
+@media(max-width:600px){
+    .main{
+        align-items: flex-start;
+        width: 100%;
+    }
+    .main-wrap{
+        margin-top: 0;
+        width: 100%;
+    }
+    #contactForm{
+        min-width: 1px;
+    }
+    .main-block-inner{
+        padding: 24px 24px 36px;
+        border: none;
+        flex-grow: 1;
+    }
+    .main-block{
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    .first-screen{
+        display: flex;
+    }
+    .first-buttons{
+        margin-bottom: 20px;
+    }
+    .select-language span{
+        margin-left: 0px;
+    }
+    .select-language{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .bottom-links{
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-bottom: 17px;
+    }
+    .show-section{
+        display: flex !important;
+    }
+}
+
+
+
+
+
+
+
+
+
